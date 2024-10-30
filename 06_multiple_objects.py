@@ -7,18 +7,14 @@ import moderngl
 import pygame
 import glm
 
-
-# Set DPI awareness for high-resolution displays
 os.environ['SDL_WINDOWS_DPI_AWARENESS'] = 'permonitorv2'
 
 pygame.init()
 
-# Set OpenGL context version to 3.2, which may be more compatible on M1 Macs
 pygame.display.gl_set_attribute(pygame.GL_CONTEXT_MAJOR_VERSION, 3)
 pygame.display.gl_set_attribute(pygame.GL_CONTEXT_MINOR_VERSION, 2)
 pygame.display.gl_set_attribute(pygame.GL_CONTEXT_PROFILE_MASK, pygame.GL_CONTEXT_PROFILE_CORE)
 
-# Initialize the pygame display with OpenGL
 pygame.display.set_mode((800, 800), flags=pygame.OPENGL | pygame.DOUBLEBUF, vsync=True)
 
 
@@ -53,7 +49,6 @@ class Scene:
     def __init__(self):
         self.ctx = moderngl.get_context()
 
-        # Updated shader version to 150 for compatibility
         self.program = self.ctx.program(
             vertex_shader='''
                 #version 150
