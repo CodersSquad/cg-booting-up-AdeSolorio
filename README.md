@@ -37,7 +37,12 @@ pip install numpy
 pip install objloader
 pip install PIL
 ```
-
+### Run each file
+```
+python 01_hello_world.py
+python 06_multiple_objects.py
+python 09_model_and_images.py
+```
 ## Grading Policy
 
 - 25% - `01_hello_world.py` is running with no errors
