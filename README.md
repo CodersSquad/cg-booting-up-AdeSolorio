@@ -18,18 +18,24 @@ This lab stands to prepare the moderngl development environment. Below the steps
     - https://github.com/moderngl/moderngl
     - https://moderngl.readthedocs.io/
 
-## How to run your program
-
+## How to run the program
+### Open your terminal
+### Clone the repository on your desired path
 ```
-# Update this section with instructions on how to run your programs. 
-
-# Consider that these instructions will be executed 
-in a completely new linux-based machine (Ubuntu 22.04),
-so, instructions for dependencies installation must be added.
-
-# It's highly recommended to use python virtual envs. 
-You may take a look on:
-https://docs.python.org/3/library/venv.html
+git clone https://github.com/CodersSquad/cg-booting-up-AdeSolorio
+```
+### Create a python virtual environment in the same path
+```
+python -m venv /path/to/new/virtual/environment
+```
+### Install all the dependencies on the new virtual environment
+```
+pip install moderngl
+pip install pygame
+pip install pyglm
+pip install numpy
+pip install objloader
+pip install PIL
 ```
 
 ## Grading Policy
